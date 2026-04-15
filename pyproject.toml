@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skmgr"
+version = "0.1.0"
+description = "AI coding tool skill manager"
+requires-python = ">=3.10"
+
+[project.scripts]
+skm = "skmgr.cli:main"
+
+[tool.setuptools]
+packages = ["skmgr"]
+package-dir = {skmgr = "src"}
